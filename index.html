@@ -15,16 +15,17 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-	<!--Favion -->
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	
+    <!--Favion -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
 </head>
 
 <body>
@@ -57,17 +58,20 @@
     <!-- Header -->
     <header class="header" id="top">
         <div class="text-vertical-center">
-            <img src="img/logo.png" style="width: 300px; padding-bottom: 150px" >
-            <img src="img/byline.png" style="width: 300px; padding-bottom: 150px" > 
+            <img src="img/logo.png" style="width: 300px; padding-bottom: 150px">
+            <img src="img/byline.png" style="width: 300px; padding-bottom: 150px">
         </div>
     </header>
 
     <section id="about" class="about">
         <div class="container">
             <h2 class="text-center">What is Next Event?</h2>
-            <p class="lead">Next Event is the next generation booking and networking platform for event management. Next Event will allow ANYBODY to book and organise an event from End to End, quickly and efficiently. By networking suppliers, entertainers, venues and event organisers in a one stop shop experience. It’s about making it easy for the customer, all information from once source, one email and one platform</p>
+            <p class="lead">Next Event is the next generation booking and networking platform for event management. Next Event will allow
+                ANYBODY to book and organise an event from End to End, quickly and efficiently. By networking suppliers,
+                entertainers, venues and event organisers in a one stop shop experience. It’s about making it easy for the
+                customer, all information from once source, one email and one platform</p>
         </div>
-    <!-- /.container -->
+        <!-- /.container -->
     </section>
 
     <!-- Video -->
@@ -84,18 +88,45 @@
         <div class="container">
             <form class="contact-form" method="post" action="https://formspree.io/shorter.david@gmail.com">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="form-group">
-                             <div class="input-group">
+                            <div class="input-group">
                                 <input type="text" class="form-control" name="name" placeholder="Name" id="name" aria-describedby="sizing-addon2">
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1" name="Role">
+                                <option value="Unknown" selected disabled>Type</option>
+                                <option>Venue</option>
+                                <option>Event Organiser</option>
+                                <option>Event Organiser</option>
+                                <option>Entertainer</option>
+                                <option>Event Supplier</option>
+                                <option>Other</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">@</span>
-                                <input type="text" class="form-control" placeholder="Email Address" name="email" id="email" aria-describedby="sizing-addon2">
+                                <input type="email" class="form-control" placeholder="Email Address" name="email" id="email" aria-describedby="sizing-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="businesss" placeholder="Business Name" id="business" aria-describedby="sizing-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="tel" class="form-control" placeholder="Phone" name="phone number" id="phone" aria-describedby="sizing-addon2">
                             </div>
                         </div>
                     </div>
@@ -112,7 +143,7 @@
 
                     </div>
                 </div>
-                
+
             </form>
         </div>
         <!-- /.container -->
@@ -128,7 +159,7 @@
                     </h4>
                     <ul class="list-unstyled">
                         <li>
-                                <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:info@nextevent.co.nz">info@nextevent.co.nz</a>
+                            <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:info@nextevent.co.nz">info@nextevent.co.nz</a>
                         </li>
                     </ul>
                     <br>

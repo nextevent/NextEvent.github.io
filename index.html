@@ -29,31 +29,10 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close").click();>Next Event</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$( "#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$( "#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$( "#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$( "#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#video" onclick=$( "#menu-close").click();>Video</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="alert alert-success alert-dismissable" style="display:none;" id="successfulEmail">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Thanks</strong> Thanks for Signing up to Next Event, while we are busy building our platform to provide you the automated experience, one of our representatives will contact you shortly and keep you up to date with everything you need to know about Next Event
+    </div>
 
     <!-- Header -->
     <header class="header" id="top">
@@ -87,7 +66,7 @@
     <section id="contact" class="about">
         <div class="container">
             <form class="contact-form" method="post" action="https://formspree.io/info@nextevent.co.nz">
-                <input type="hidden" name="_next" value="//nextevent.co.nz" />
+                <input type="hidden" name="_next" value="//nextevent.co.nz?emailsent" />
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
@@ -189,6 +168,14 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
+
+    <script>
+        let params = (new URL(document.location)).searchParams;
+        let name = params.get("emailsent");
+        if (name !== null) {
+            $('#successfulEmail').show();
+        }
+    </script>
 
 </body>
 

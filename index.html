@@ -40,21 +40,30 @@
     <header class="header" id="top">
         <!-- Dont judge me for the below fiddling with the tops, my html is v weak -->
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline">
                 <img src="img/logo.png" height="500px" style="padding-top: 100px">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center" style="top: -100px">
-                <img src="img/byline.png" height="300px">
+            <div class="col-12 text-center d-inline d-sm-none">
+                <img src="img/logo.png" height="350px" style="padding-top: 100px">
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center" style="top: -150px">
+            <div class="col-12 text-center d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline" style="top: -100px">
+                <img src="img/byline.png" height="300px">
+            </div> 
+            <div class="col-12 text-center d-inline d-sm-none" style="top: -30px">
+                <img src="img/byline.png" height="150px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline" style="top: -150px">
+                <a href="#contact" class="btn btn-dark btn-lg js-scroll-trigger">Sign up for interest</a>
+            </div>
+
+            <div class="col-12 text-center d-inline d-sm-none" style="top: 0px">
                 <a href="#contact" class="btn btn-dark btn-lg js-scroll-trigger">Sign up for interest</a>
             </div>
         </div>
-
     </header>
 
     <section id="about" class="about">
